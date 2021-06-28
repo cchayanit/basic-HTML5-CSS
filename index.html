@@ -4,9 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>basic css</title>
+    <title>CSS Format</title>
+    <style>
+        /*internal embed*/ 
+        p{
+            font-style: italic;
+        }
+        p.a{
+            font-size: 20px;
+        }
+        p.aa{
+            font-size: 10pt;
+        }
+        /*rem*/
+        html{
+            font-size: 20px;
+        }
+        div{
+            font-size: 1.5rem;
+        }
+        /*em --> div is near body*/
+        body{
+            font-size: 10px;
+        }
+        div{
+            font-size: 2em;
+        }
+        /*universal selector*/
+        *{
+            background-color: darkgray;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #b{
+            color: red;
+            font-family: monospace
+        }
+        .b{
+            color: blue;
+            font-family: monospace;
+        }
+        
+
+
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>HTML เบื้องต้น</h1>    
+            <!-- inline -->
+        <p style="color: blue;font-weight:bolder">chayanit</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum non veniam neque at ullam perspiciatis inventore, numquam magni officia harum voluptas voluptatum autem mollitia doloremque nesciunt maiores quia quaerat tempora.</p>
+            <!-- external -->
+        <h1 class="title">CSS</h1>
+        <p id="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nam fuga quae nihil hic, libero ut, quaerat accusamus voluptates, asperiores labore illum dolor. Ad id officiis dolorum amet animi repellat!</p>
+
+        <p class="a">CSS3</p>
+        <p class="aa">ccccccccccccc</p>
+            <!-- rem -->
+        <div>CSS3</div>
+        <div>CSS3</div>
+        <div>CSS3</div>
+        <div>CSS3</div>
+            <!-- em -->
+        <div>
+            test1 (10*2)
+            <div>
+                test2 (20*2)
+                <div>
+                    test3 (40*2)
+                    <div>
+                        test4 (80*2)
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- universal selector -->
+        <h1>chayanit</h1>
+        <p class="b">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quidem suscipit, 
+        provident velit ad enim nostrum assumenda vitae voluptate sequi repudiandae iure minus
+         animi, consectetur quas voluptatibus, ea praesentium. Minima.</p>
+        <hr>
+        <h1>CSS3</h1>
+        <p id="b">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum numquam aliquid animi alias officia, quae perferendis hic quas quod ipsum? Non animi aspernatur dignissimos modi quaerat, quam eligendi aut id?</p>
+        <div style="border: 1px solid red" width="500px" height="500px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quis perspiciatis soluta dolorum ullam deserunt harum voluptates? Nam quas omnis necessitatibus laborum praesentium expedita. Saepe corrupti tenetur ducimus similique qui?
+        </div>
 </body>
 </html>
